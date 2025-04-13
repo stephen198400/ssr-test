@@ -2,8 +2,13 @@ import { createServerClient } from '@supabase/ssr';
 import { createClient } from '@supabase/supabase-js';
 import { parseCookies, setCookie } from '@tanstack/react-start/server';
 
-const supabaseUrl = import.meta.env.SUPABASE_URL;
-const supabaseKey = import.meta.env.SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.SUPABASE_URL || import.meta.env.SUPABASE_URL;
+const supabaseKey =
+	process.env.SUPABASE_ANON_KEY || import.meta.env.SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+	console.error('Missing Supabase credentials. Please check your .env file.');
+}
 
 export function getSupabaseServerClient() {
 	return createServerClient(supabaseUrl, supabaseKey, {

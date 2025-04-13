@@ -21,12 +21,6 @@ export const Route = createRootRouteWithContext<{
 				content: 'width=device-width, initial-scale=1',
 			},
 			{
-				name: 'Content-Security-Policy',
-				httpEquiv: 'Content-Security-Policy',
-				content:
-					"default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' *; img-src 'self' data:;",
-			},
-			{
 				title: 'TanStack Start Starter',
 			},
 		],
