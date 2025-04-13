@@ -329,11 +329,7 @@ function DraggableRow({ row }: { row: Row<z.infer<typeof schema>> }) {
 	);
 }
 
-export function DataTable({
-	data: initialData,
-}: {
-	data: z.infer<typeof schema>[];
-}) {
+export function DataTable({ data: initialData }: { data: any[] }) {
 	const [data, setData] = React.useState(() => initialData);
 	const [rowSelection, setRowSelection] = React.useState({});
 	const [columnVisibility, setColumnVisibility] =
