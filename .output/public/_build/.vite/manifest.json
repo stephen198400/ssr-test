@@ -1,0 +1,73 @@
+{
+  "/Users/stephen/Dev/test/tan-test/src/styles/app.css": {
+    "file": "assets/app-DcdX1i49.css",
+    "src": "/Users/stephen/Dev/test/tan-test/src/styles/app.css"
+  },
+  "__vite-browser-external": {
+    "file": "assets/__vite-browser-external-BIHI7g3E.js",
+    "name": "__vite-browser-external",
+    "src": "__vite-browser-external",
+    "isDynamicEntry": true
+  },
+  "_client-DokqGmCD.js": {
+    "file": "assets/client-DokqGmCD.js",
+    "name": "client",
+    "dynamicImports": [
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "__vite-browser-external",
+      "src/routes/index.tsx?tsr-split=component",
+      "src/routes/dashboard/_dashboard.tsx?tsr-split=component",
+      "src/routes/dashboard/_dashboard/index.tsx?tsr-split=component"
+    ],
+    "assets": [
+      "assets/app-DcdX1i49.css"
+    ]
+  },
+  "_index-DWOuHBhm.js": {
+    "file": "assets/index-DWOuHBhm.js",
+    "name": "index",
+    "imports": [
+      "_client-DokqGmCD.js"
+    ]
+  },
+  "src/routes/dashboard/_dashboard.tsx?tsr-split=component": {
+    "file": "assets/_dashboard-CXnFy0zT.js",
+    "name": "_dashboard",
+    "src": "src/routes/dashboard/_dashboard.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-DokqGmCD.js",
+      "_index-DWOuHBhm.js"
+    ]
+  },
+  "src/routes/dashboard/_dashboard/index.tsx?tsr-split=component": {
+    "file": "assets/index-BRM_vntl.js",
+    "name": "index",
+    "src": "src/routes/dashboard/_dashboard/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-DokqGmCD.js",
+      "_index-DWOuHBhm.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-BXU2Xe8X.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_client-DokqGmCD.js"
+    ]
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-BXIfrq_m.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_client-DokqGmCD.js"
+    ]
+  }
+}

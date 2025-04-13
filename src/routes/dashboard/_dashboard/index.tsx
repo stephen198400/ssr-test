@@ -1,6 +1,6 @@
 import { DataTable } from '@/components/data-table';
 import { SectionCards } from '@/components/section-cards';
-import { useDataQuery } from '@/serverFn/getAllData';
+import { useDataQuery } from '@/query/useData';
 import { useQuery } from '@tanstack/react-query';
 import { createFileRoute } from '@tanstack/react-router';
 
